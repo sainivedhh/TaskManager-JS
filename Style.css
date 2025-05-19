@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e86de;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2168c4;
+}
+
+.task {
+  background-color: #f1f1f1;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.task h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.task p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.task .actions {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+
+.task .actions button {
+  background: transparent;
+  color: #555;
+  border: none;
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+.task .actions button:hover {
+  color: #e74c3c;
+}
+
+.clear-btn {
+  background-color: #e74c3c;
+  width: 100%;
+  margin-top: 20px;
+}
