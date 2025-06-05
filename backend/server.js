@@ -9,6 +9,11 @@ const DATA_FILE = 'tasks.json';
 app.use(cors());
 app.use(express.json());
 
+const path = require('path');
+
+// Serve static files from the frontend folder
+app.use(express.static(path.join(__dirname, '../frontend')));
+
 // Load tasks from file
 function loadTasks() {
   try {
